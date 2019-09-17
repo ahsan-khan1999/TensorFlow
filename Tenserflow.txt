@@ -1,0 +1,28 @@
+* Tenserflow is an open source libarary devlop by google brain team
+* it is an extremely verstile libarary orignally designed for task with heavy numerical computing
+* Main application is machine learning and deep neural networks
+* Due to C/C++ backend tenserflow is able to run faster than pure python code
+* Tenderflow app uses a structure known as a data flow graph which is very useful to first build and than execute it in a session it is a very common programing model for parallel computing
+* tenserflow provides both C++ and python api python api is more complte and easier to use
+* tenserflow has a faster complition time in comparison to other deep learning api's
+* it supports cpu's,gup's,and distributive processing in clusters it is a very imp feature as you can train a neural network
+* Tenser flow structure is based on a data flow graph 
+* a data flow gaph has two basic units 
+* Nodes --> mathematical Operations
+* Edges	--> multi-dimensional arrays(tensors->data pass between operations)
+* by data flow graph we can easily visualize diff parts of graph which is not an option in numpy or scikit
+* the standard usage is build graph first and than execute
+* we can represent an gray scale image in 2-dim array but in order to represent colors info we need another dimension so 3-dim
+
+* eg from video <feature matrix> is a place holder can be seen as holes in model holes through which we can pass data from outside the graph
+* place holders allow us to create our operations in the graph without needing the data
+* when we executes the graph we have to feed placeholders with our input data this is why we need to initialze place holders before using them
+* in the example weight matrix is a variable 
+Variable:
+	a variable is use to share and presist some value that are manupilated by the program.
+* when we define a placeholder or variable tenserfloe adds an operation to our graph In our graph weight matrix and feature should be multiplied using multiplication operation after that add operation is called which adds the result of the previous operation with bias term the output of each operation is a tensor the resulting tensor of each operation crosses the next one untill the end where it possible to get the desired result after adding all these operation in the graph we can create a session to run the graph and peform computations
+* tenser flow archicture allows you to deploy computation on one or more cpu's , gpu's or on a desktop or server or even on a mobile device
+* this means you build your program ones and run it on different devices
+* tensorflow has in-built support for deep learning and neural networks
+* so it is easy to assemble a net assign parameters and run the traning process
+* secondly it has a collection of simple trainable mathematical functions that are useful for are neural network
